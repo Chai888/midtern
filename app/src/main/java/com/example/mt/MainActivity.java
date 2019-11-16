@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvForgot;
     private CheckBox cbShowPassword;
 
-    String Username = "Larry";
-    String Password = SHA("ABCABC");
+    String Username = "jason@gmail.com";
+    String Password = SHA("abc12345");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

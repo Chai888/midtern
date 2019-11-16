@@ -18,7 +18,7 @@ public class GameProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game_profile);
 
         sTitle = getIntent().getStringExtra("name");
-        sRate = getIntent().getStringExtra("rate");
+        sRate = getIntent().getStringExtra("rating");
         sPrice = getIntent().getStringExtra("price");
         sDescription = getIntent().getStringExtra("des");
 

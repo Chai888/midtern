@@ -61,7 +61,7 @@ public class GamesActivity extends AppCompatActivity {
 
                 Intent i = new Intent(GamesActivity.this, GameProfileActivity.class);
                 i.putExtra("name", games.getGameName());
-                i.putExtra("rate", games.getGameRate());
+                i.putExtra("rating", games.getGameRate());
                 i.putExtra("price", games.getGamePrice());
                 i.putExtra("des",games.getGameDescription());
 
@@ -111,7 +111,7 @@ public class GamesActivity extends AppCompatActivity {
                         /**
                          * Getting Array named "contacts" From MAIN Json Object
                          */
-                        JSONArray array = jsonObject.getJSONArray("Game");
+                        JSONArray array = jsonObject.getJSONArray("data");
 
                         /**
                          * Check Length of Array...
@@ -135,7 +135,7 @@ public class GamesActivity extends AppCompatActivity {
                                  */
                                 JSONObject game = array.getJSONObject(jIndex);
                                 String name = game.getString("name");
-                                String rate = game.getString("rate");
+                                String rate = game.getString("rating");
                                 String price = game.getString("price");
                                 String DES = game.getString("description");
 
